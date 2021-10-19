@@ -1,0 +1,14 @@
+NLA issue resolve:
+
+1) stop the instance
+2) Detach the sda1 drive
+3) attach it to any jump server
+4) ntpwedit0.7 -> attched dribe=ve letter -> unlock ladmin and miguser
+5) change password of miguser and Ladmin
+6) detach from jump server
+7) Attach it to the original server as /dev/sda1
+8)nbtstat -A 192.168.42.33 to find the hostname
+9) login using the hostname as username eg. username\miguser and password
+ladmin will change as Administrator
+10) Disjoin from domain
+11) againn join it to domain
